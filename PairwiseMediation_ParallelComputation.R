@@ -57,7 +57,7 @@ colnames(med.results_vitD_fev1) <- c('nobs', 'ACME.C', 'ACME.C.lo', 'ACME.C.hi',
 
 
 # Assign rownames
-med.results_vitD_fev1$Variable <- paste(colnames(d1)[1], colnames(d1)[2], sep = '.')
+med.results_vitD_fev1$Variable <- paste(colnames(d1)[1], colnames(d1[2:26744), sep = '.')
 
 # Stop the cluster
 stopCluster(cl)
